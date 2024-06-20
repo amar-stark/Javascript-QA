@@ -1,6 +1,8 @@
-/* Q. Write a function that returns the reverse of a string. */
+/* ==================================================================================================================
+Q. Write a function that returns the reverse of a string? 
+================================================================================================================== */
 
-let str = 'Write a function that returns the reverse of a string';
+let str = 'Write a function that returns the reverse of a string?';
 
 // using for loop
 function stringReverse(str) {
@@ -23,7 +25,9 @@ function stringReverseUsingArrayMethods(str) {
 console.log(stringReverseUsingArrayMethods(str));
 
 
-/* Q. Write a function that returns the longest word in the sentence. */
+/* ==================================================================================================================
+Q. Write a function that returns the longest word in the sentence.
+================================================================================================================== */
 
 // using for loop
 function longestWord(str) {
@@ -49,7 +53,9 @@ function longestWordUsingArrayMethods(str) {
 console.log(longestWordUsingArrayMethods(str));
 
 
-/* Q. Write a function that checks whether a given string is a palindrome or not? */
+/* ==================================================================================================================
+Q. Write a function that checks whether a given string is a palindrome or not?
+================================================================================================================== */
 
 // using for loop
 function palindrome(str) {
@@ -80,7 +86,9 @@ function palindromeUsingArrayMethods(str) {
 console.log(palindromeUsingArrayMethods(str));
 
 
-/* Q. Write a function to remove duplicate elements from an array. */
+/* ==================================================================================================================
+Q. Write a function to remove duplicate elements from an array.
+================================================================================================================== */
 
 let arr = [1, 1, 2, 2, 3, 3, 4, 5, 6, 1];
 
@@ -100,7 +108,9 @@ function removeDuplicates(arr) {
 console.log(removeDuplicates(arr))
 
 
-/* Q. Write a function that checks whether two strings are anagrams or not? */
+/* ==================================================================================================================
+Q. Write a function that checks whether two strings are anagrams or not?
+================================================================================================================== */
 
 let s1 = 'cars', s2 = 'scar';
 
@@ -118,7 +128,9 @@ function anagrams(s1, s2) {
 console.log(anagrams(s1, s2));
 
 
-/* Q. Write a function that returns the number of vowels in a string. */
+/* ==================================================================================================================
+Q. Write a function that returns the number of vowels in a string.
+================================================================================================================== */
 
 let vowelStr = 'Write a function that returns the number of vowels in a string';
 
@@ -138,7 +150,9 @@ function vowels(str) {
 console.log(vowels(vowelStr));
 
 
-/* Q. Write a function to find the largest number in an array. */
+/* ==================================================================================================================
+Q. Write a function to find the largest number in an array.
+================================================================================================================== */
 
 let numArr = [1, 1, 21, 12, 3, 93, 4, 5, 6, 10, 23, 40, 98, 103, 73, 443, 2343, 42434, 232, 2, 1, 56];
 
@@ -163,13 +177,15 @@ function largestNumUsingArrayMethods(arr) {
 console.log(largestNumUsingArrayMethods(numArr));
 
 
-/* Q. Write a function to check if a given number is prime or not? */
+/* ==================================================================================================================
+Q. Write a function to check if a given number is prime or not?
+================================================================================================================== */
 
 // using for loop
 function isPrime(num) {
     if (num < 2) return false;
 
-    for (let i = 2; i < Math.sqrt(num); i++) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) return false;
     }
 
@@ -179,7 +195,9 @@ function isPrime(num) {
 console.log(isPrime(10));
 
 
-/* Q. Write a function to calculate the factorial of a number. */
+/* ==================================================================================================================
+Q. Write a function to calculate the factorial of a number.
+================================================================================================================== */
 
 // using for loop
 function factorial(num) {
@@ -206,7 +224,9 @@ function factorialUsingRecursion(num) {
 console.log(factorialUsingRecursion(10));
 
 
-/* Q. Write a function to remove all whitespace characters from a string. */
+/* ==================================================================================================================
+Q. Write a function to remove all whitespace characters from a string.
+================================================================================================================== */
 
 let whitespaceStr = 'Write a    function to   remove all whitespace     characters from      a      string.';
 
@@ -223,7 +243,7 @@ function removeWhitespaces(str) {
 
 console.log(removeWhitespaces(whitespaceStr));
 
-// using string method
+// using string methods
 function removeWhitespacesStringMethod(str) {
     return str.replaceAll(' ', '');
 }
